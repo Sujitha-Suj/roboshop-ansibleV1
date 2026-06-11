@@ -5,6 +5,7 @@
     instances: ["mangodb", "redis", "mysql", "rabbitmq"]
     image_id: ami-0220d79f3f480ecf5
     domain_name: sujitha-daws.online
+    action: create
   tasks: 
   - name: create the aws instances
     amazon.aws.ec2_instance:
