@@ -5,7 +5,7 @@
     - name: copy the mango repo
       copy: 
         src: mango.repo
-        dest: /etc/yum.repos.d/mongo.db
+        dest: /etc/yum.repos.d/mongo.repo
     - name: install the mangodb
       package:
         name: mongodb-org
