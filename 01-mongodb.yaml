@@ -1,10 +1,10 @@
-- name: configuring the mangodb
-  hosts: mangodb
+- name: configuring the mongodb
+  hosts: mongodb
   become: yes
   tasks:
     - name: copy the mango repo
       copy: 
-        src: mango.repo
+        src: mongo.repo
         dest: /etc/yum.repos.d/mongo.repo
     - name: install the mangodb
       package:
