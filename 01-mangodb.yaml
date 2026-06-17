@@ -1,0 +1,8 @@
+- name: configuring the mangodb
+  hosts: mangodb
+  become: yes
+  tasks:
+    - name: copy the mango repo
+      copy: 
+        src: mango.repo
+        dest: /etc/yum.repos.d/mongo.db
