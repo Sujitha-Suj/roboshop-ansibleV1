@@ -30,7 +30,7 @@
     - name: download user code 
       get_url:
         url: https://roboshop-artifacts.s3.amazonaws.com/user-v3.zip 
-      dest: /tmp/user.zip
+        dest: /tmp/user.zip
     - name: unzip user
       unarchive:
         src: /tmp/user.zip
