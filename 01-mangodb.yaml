@@ -6,3 +6,17 @@
       copy: 
         src: mango.repo
         dest: /etc/yum.repos.d/mongo.db
+    - name: install the mangodb
+      package:
+        name: mongodb-org
+        state: present
+    - name: allow remote connections
+      replace: 
+        path: /etc/mongo.conf
+        regexp: '127.0.0.1'
+        replace: '0.0.0.0'
+    - name: start and enable connection
+      service: 
+        name: mongodb
+        state: started
+        enabled: yes
