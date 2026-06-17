@@ -24,7 +24,7 @@
     - name: delete payment.zip directory
       file: 
         path: /tmp/payment.zip
-        state: directory
+        state: absent
     - name: create /app directory
       file:
         path: /app
