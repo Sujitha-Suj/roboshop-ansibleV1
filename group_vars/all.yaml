@@ -1,6 +1,6 @@
 ansible_user: ec2-user
 ansible_password: DevOps321
-MONGODB_HOST: mangodb.sujitha-daws.online
+MONGODB_HOST: mongodb.sujitha-daws.online
 REDIS_HOST: redis.sujitha-daws.online
 MYSQL_HOST: mysql.sujitha-daws.online
 RABBITMQ_HOST: rabbitmq.sujitha-daws.online
